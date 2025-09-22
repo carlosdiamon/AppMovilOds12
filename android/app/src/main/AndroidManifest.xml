@@ -1,15 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.vcard_scanner">
-
-<!-- Permisos: deben ir antes de <application> -->
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    package="co.edu.unbosque.reviu">
 
     <application
-        android:label="vcard_scanner"
+        android:label="Reviu"
         android:icon="@mipmap/ic_launcher">
 
         <activity
@@ -32,12 +25,4 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
-
-    <!-- Queries si tu app usa ACTION_PROCESS_TEXT (opcional, conserva si ya estaba) -->
-    <queries>
-        <intent>
-            <action android:name="android.intent.action.PROCESS_TEXT"/>
-            <data android:mimeType="text/plain"/>
-        </intent>
-    </queries>
 </manifest>
